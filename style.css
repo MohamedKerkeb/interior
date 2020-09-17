@@ -6,32 +6,31 @@ font-family: 'Lora', serif;
 font-family: 'Montserrat', sans-serif;
 */
 
+:root {
+  --bg-color: #181719;
+  --crimson: "Crimson Pro", serif;
+  --lora: "Lora", serif;
+  --montserrat: "Montserrat", sans-serif;
+}
+
 body {
-  background: #181719;
+  background: var(--bg-color);
   color: #ffffff;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--montserrat);
   height: 100vh;
-  /* width: 100vw; */
-  /* border: deepskyblue dashed 2px; */
 }
 
 .container {
   height: 100vh;
   width: 100%;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center; */
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 50px auto 50px;
-  /* border: darkturquoise dashed 1px; */
 }
 
 /* Header */
 
 .header {
-  /* border: 1px solid sandybrown; */
   height: 50px;
   width: 100%;
   display: flex;
@@ -48,7 +47,7 @@ body {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  font-family: "Crimson Pro", serif;
+  font-family: var(--crimson);
   font-size: 14px;
   font-weight: 200;
   line-height: 16px;
@@ -56,28 +55,27 @@ body {
   font-style: normal;
 }
 
-.material-icons {
+/*.material-icons {
   font-family: "Material Icons";
-  /* font-weight: normal;
-  font-style: normal; */
+  font-weight: normal;
+  font-style: normal; 
   font-size: 24px; /* Preferred icon size */
-  /* display: inline-block;
+/* display: inline-block;
   line-height: 1;
   text-transform: none;
   letter-spacing: normal;
   word-wrap: normal;
   white-space: nowrap;
-  direction: ltr; */
-  /* border: darkviolet 1px dashed; */
+  direction: ltr;
+  border: darkviolet 1px dashed;
   cursor: pointer;
-  /* padding: 10px; */
-}
+  padding: 10px;
+}*/
 
 /* Nav */
 
 .navbar {
-  background-color: #181719;
-  /* border: dashed deeppink 1px; */
+  background-color: var(--bg-color);
   height: 50px;
   width: 50px;
   font-size: 24px;
@@ -93,7 +91,7 @@ body {
 }
 
 .nav-menu {
-  background-color: #181719;
+  background-color: var(--bg-color);
   width: 100%;
   height: 100vh;
   display: flex;
@@ -116,7 +114,6 @@ body {
   padding: 8px 0px 8px 16px;
   list-style: none;
   height: 60px;
-  /* border: dashed 1px darkturquoise; */
 }
 
 .nav-text a {
@@ -130,7 +127,6 @@ body {
   align-items: center;
   padding: 0 16px;
   border-radius: 4px;
-  /* border: darkviolet dashed 1px; */
 }
 
 .nav-text a:hover {
@@ -142,9 +138,8 @@ body {
 }
 
 .navbar-toggle {
-  background-color: #181719;
-
-  width: 100%;
+  background-color: var(--bg-color);
+  width: 95%;
   height: 50px;
   display: flex;
   justify-content: flex-end;
@@ -163,7 +158,6 @@ span {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  /* border: 1px dashed darkslategrey; */
 }
 
 .wrapper_text > h2 {
@@ -178,14 +172,14 @@ span {
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--montserrat);
   margin-top: 10px;
   width: 250px;
   height: 85px;
 }
 
 .wrapper_text > small {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--montserrat);
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -197,21 +191,15 @@ span {
 
 .wrapper {
   width: 100%;
-  /* height: 100%; */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  /* align-items: center; */
-  /* background: darkgreen; */
 }
 
 .wrapper__img {
-  /* border: springgreen solid 1px; */
   background: url("img/photo1.png") center / cover no-repeat;
   height: 280px;
-  /* width: 100%; */
   margin: 0 10px;
-  /* transform: matrix(-1, 0, 0, 1, 0, 0); */
   position: relative;
   z-index: -1;
 }
@@ -223,7 +211,6 @@ span {
 
 /* Card */
 .card {
-  /* border: 1px dashed darkred; */
   width: 250px;
   background: #181719;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -235,10 +222,8 @@ span {
 
 .card_image {
   display: flex;
-  /* flex-direction: row; */
   justify-content: flex-start;
   align-items: center;
-  /* border: darkviolet 1px solid; */
   padding: 5px;
 }
 
@@ -246,11 +231,9 @@ span {
   border-radius: 50%;
   width: 62px;
   height: 52px;
-  /* border: solid forestgreen 1px; */
 }
 
 .card_content {
-  /* border: 1px dashed deepskyblue; */
   height: 100%;
   width: 80%;
   margin-left: 10px;
@@ -258,14 +241,13 @@ span {
 
 .card_name {
   font-weight: 500;
-
   font-size: 12px;
   line-height: 15px;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--montserrat);
 }
 
 .card_job {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--montserrat);
   font-weight: 500;
   font-size: 10px;
   line-height: 12px;
@@ -273,8 +255,7 @@ span {
 }
 
 .card_content_text {
-  /* border: tomato 1px dashed; */
-  font-family: "Lora", serif;
+  font-family: var(--lora);
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -283,10 +264,33 @@ span {
 /* footer */
 
 footer {
-  /* border: dashed darkviolet 1px; */
-  /* background: darkviolet; */
   height: 50px;
   width: 100%;
   text-align: center;
   padding-top: 10px;
+}
+
+/* Destock */
+
+@media screen and (min-width: 960px) {
+  .container {
+    width: 960px;
+    margin: auto;
+  }
+  .wrapper {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    /* border: springgreen solid 1px; */
+  }
+  .wrapper_text {
+    /* border: 1px solid red; */
+    height: 50%;
+    width: 40%;
+  }
+  .wrapper__img {
+    /* border: red 1px solid; */
+    height: 50%;
+    width: 60%;
+  }
 }
