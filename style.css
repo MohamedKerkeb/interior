@@ -42,7 +42,7 @@ body {
   margin: 10px;
   border: 1px solid white;
   height: 31px;
-  width: 103px;
+  width: 110px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -129,10 +129,6 @@ body {
   border-radius: 4px;
 }
 
-.nav-text a:hover {
-  background-color: #1a83ff;
-}
-
 .nav-menu-items {
   width: 100%;
 }
@@ -211,12 +207,13 @@ span {
 
 /* Card */
 .card {
-  width: 250px;
+  width: 300px;
+  height: 138px;
   background: #181719;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   position: absolute;
-  right: 50px;
-  bottom: -100px;
+  right: 55px;
+  bottom: -60px;
   padding: 5px;
 }
 
@@ -292,5 +289,26 @@ footer {
     /* border: red 1px solid; */
     height: 50%;
     width: 60%;
+  }
+  .navbar {
+    border: springgreen 1px solid;
+    display: none;
+  }
+  .nav-menu {
+    height: 50px;
+    width: 100;
+    right: 0;
+    position: initial;
+    display: block;
+    /* border: springgreen 1px solid; */
+  }
+  .navbar-toggle {
+    display: none;
+  }
+  .nav-menu-items {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 50px;
   }
 }
